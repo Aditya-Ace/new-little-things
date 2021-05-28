@@ -1,3 +1,8 @@
+## Important Stuff
+
+Before you read everything below, I am working on something I can share with everyone
+A Project made in love with Node React and Next. it tells the story about life and all about life and happiness, sadness, sorrow, pain, broken, strong etc.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

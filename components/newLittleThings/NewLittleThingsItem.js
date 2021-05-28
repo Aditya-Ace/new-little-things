@@ -1,7 +1,7 @@
 import Card from "../ui/Card"
 import classes from "./NewLittleThingsItem.module.css"
 
-function MeetupItem(props) {
+function NewLittleThingsItem(props) {
   return (
     <li className={classes.item}>
       <Card>
@@ -20,4 +20,4 @@ function MeetupItem(props) {
   )
 }
 
-export default MeetupItem
+export default NewLittleThingsItem

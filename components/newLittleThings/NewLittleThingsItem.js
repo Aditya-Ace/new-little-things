@@ -1,7 +1,12 @@
+import { useRouter } from "next/router"
 import Card from "../ui/Card"
 import classes from "./NewLittleThingsItem.module.css"
 
 function NewLittleThingsItem(props) {
+  const router = useRouter()
+  const clientEventHandler = () => {
+    return router.push(`/${props.id}`)
+  }
   return (
     <li className={classes.item}>
       <Card>
@@ -13,7 +18,7 @@ function NewLittleThingsItem(props) {
           <blockquote>{props.punchLine}</blockquote>
         </div>
         <div className={classes.actions}>
-          <button>Show Details</button>
+          <button onClick={clientEventHandler}>Show Details</button>
         </div>
       </Card>
     </li>

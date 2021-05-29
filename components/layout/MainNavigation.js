@@ -1,3 +1,4 @@
+import Link from "next/link"
 import classes from "./MainNavigation.module.css"
 
 function MainNavigation() {
@@ -7,10 +8,10 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Things</Link>
+            <Link href="/">Things</Link>
           </li>
           <li>
-            <Link to="/new-little-thing">Add a thing</Link>
+            <Link href="/new-little-things">Add a thing</Link>
           </li>
         </ul>
       </nav>

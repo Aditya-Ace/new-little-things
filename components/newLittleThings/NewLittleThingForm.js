@@ -4,10 +4,10 @@ import Card from "../ui/Card"
 import classes from "./NewLittleThingForm.module.css"
 
 function NewLittleThingsForm(props) {
-  const [title, setTitle] = useState(null)
-  const [image, setImage] = useState(null)
-  const [punchLine, setPunchLine] = useState(null)
-  const [description, setDescription] = useState(null)
+  const [title, setTitle] = useState("")
+  const [image, setImage] = useState("")
+  const [punchLine, setPunchLine] = useState("")
+  const [description, setDescription] = useState("")
 
   function submitHandler(event) {
     event.preventDefault()

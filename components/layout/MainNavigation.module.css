@@ -8,6 +8,10 @@
   padding: 0 10%;
 }
 
+.header img {
+  position: sticky;
+}
+
 .logo {
   font-size: 2rem;
   color: white;

@@ -1,15 +1,25 @@
+import Head from "next/head"
 import { MongoClient, ObjectId } from "mongodb"
 import NewLittleThingDetails from "../../components/newLittleThings/NewLittleThingDetails"
 
 function NewLittleThingsInDetails(props) {
   return (
-    <NewLittleThingDetails
-      id={props.newLittleThingData.id}
-      image={props.newLittleThingData.image}
-      title={props.newLittleThingData.title}
-      punchLine={props.newLittleThingData.punchLine}
-      description={props.newLittleThingData.description}
-    />
+    <>
+      <Head>
+        <title>{`New little thing: ${props.newLittleThingData.title}`}</title>
+        <meta
+          name="description"
+          content="My New little project designed using in love with Javascript React Next Node & MongoDB"
+        />
+      </Head>
+      <NewLittleThingDetails
+        id={props.newLittleThingData.id}
+        image={props.newLittleThingData.image}
+        title={props.newLittleThingData.title}
+        punchLine={props.newLittleThingData.punchLine}
+        description={props.newLittleThingData.description}
+      />
+    </>
   )
 }
 

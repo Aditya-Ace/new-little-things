@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useRouter } from "next/router"
 import NewLittleThingsForm from "../../components/newLittleThings/NewLittleThingForm"
 
@@ -12,14 +13,24 @@ function AddNewThing() {
       },
     })
     const data = await response.json()
-    console.log(data)
     if (data.message === "Added your new little thing") {
       return router.push("/")
     } else {
       window.alert(data.message)
     }
   }
-  return <NewLittleThingsForm onAddNewLittleThing={addNewData} />
+  return (
+    <>
+      <Head>
+        <title>Add your little thing</title>
+        <meta
+          name="description"
+          content="My New little project designed using in love with Javascript React Next Node & MongoDB"
+        />
+      </Head>
+      <NewLittleThingsForm onAddNewLittleThing={addNewData} />
+    </>
+  )
 }
 
 export default AddNewThing

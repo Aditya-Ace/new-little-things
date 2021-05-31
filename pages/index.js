@@ -1,8 +1,20 @@
+import Head from "next/head"
 import { MongoClient } from "mongodb"
 import NewLittleThingsList from "../components/newLittleThings/NewLittleThingsList"
 
 function HomePage(props) {
-  return <NewLittleThingsList newLittleThings={props.littleThings} />
+  return (
+    <>
+      <Head>
+        <title>New Little Things</title>
+        <meta
+          name="description"
+          content="My New little project designed using in love with Javascript React Next Node & MongoDB"
+        />
+      </Head>
+      <NewLittleThingsList newLittleThings={props.littleThings} />
+    </>
+  )
 }
 
 export async function getStaticProps() {

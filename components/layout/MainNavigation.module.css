@@ -4,18 +4,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #77002e;
+  background-color: #ff5733;
   padding: 0 10%;
 }
 
-.header img {
-  position: sticky;
-}
-
 .logo {
+  display: flex;
   font-size: 2rem;
   color: white;
   font-weight: bold;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header ul {
@@ -23,7 +22,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .header li {
@@ -33,11 +32,28 @@
 .header a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #fcb8d2;
+  color: #1e1d1d;
+  font-weight: bold;
 }
 
 .header a:hover,
 .header a:active,
 .header a.active {
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header li a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }

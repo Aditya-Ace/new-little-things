@@ -5,16 +5,16 @@ import Image from "next/image"
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>New Little Things</div>
-
-      <Image
-        src="/balance.png"
-        alt="Picture of the author"
-        width={50}
-        height={50}
-        fixed="true"
-      />
-
+      <div className={classes.logo}>
+        New Little Things
+        <Image
+          src="/balance.png"
+          alt="Picture of the author"
+          width="50"
+          height="50"
+          fixed="true"
+        />
+      </div>
       <nav>
         <ul>
           <li>

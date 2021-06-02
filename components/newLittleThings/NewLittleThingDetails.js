@@ -4,7 +4,7 @@ function NewLittleThingDetails(props) {
     <section className={classes.details}>
       <img src={props.image} alt={props.title} />
       <h3>{props.title}</h3>
-      <blockquote>{props.punchLine}</blockquote>
+      <q>{props.punchLine}</q>
       <p>{props.description}</p>
     </section>
   )
